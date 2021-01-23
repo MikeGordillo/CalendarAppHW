@@ -1,6 +1,12 @@
+//Time
+
 var currentDay = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 $("#currentDay").html(currentDay);
+
+//Document Ready Function
+
 $(document).ready(function(){
+
  $("#hour8 .description").val(localStorage.getItem("hour8"));
  $("#hour9 .description").val(localStorage.getItem("hour9"));
  $("#hour10 .description").val(localStorage.getItem("hour10"));
@@ -11,11 +17,17 @@ $(document).ready(function(){
  $("#hour15 .description").val(localStorage.getItem("hour15"));
  $("#hour16 .description").val(localStorage.getItem("hour16"));
  $("#hour17 .description").val(localStorage.getItem("hour17"));
+
+ //Save Button onClick
+
     $(".saveBtn").on("click", function(){
         var input = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
         localStorage.setItem(time, input);
     })
+
+    //Add Color Depending on time past/future/present
+
     function addColor(){
         var now = moment().hour();
         $(".time-block").each(function (){
