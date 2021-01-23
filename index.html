@@ -10,19 +10,19 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./Assets/style.css" />
   <!--luxon script for api-->
-  <script src="https://cdn.polyfill.io/v3/polyfill.js?features=default,String.prototype.repeat,Array.prototype.find,Array.prototype.findIndex,Math.trunc,Math.sign,Object.is"></script>
-  <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js"></script>
+ 
   <title>Calendar App</title>
 </head>
 <body>
    
-  <header class="jumbotron">
+   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
+    <span class="display-1"></span>
   </header>
   <div class="container">
-    <div id="hour9" class="row time-block past">
+    <div id="hour9" class="row time-block ">
       <div class="col-md-2 hour">
         9:00am
       </div>
@@ -31,7 +31,7 @@
         <i class="icon fas fa-save"></i>
       </button>
     </div>
-    <div id="hour10" class="row time-block past">
+    <div id="hour10" class="row time-block">
       <div class="col-md-2 hour">
         10:00am
       </div>
@@ -40,7 +40,7 @@
         <i class="icon fas fa-save"></i>
       </button>
     </div>
-    <div id="hour11" class="row time-block past">
+    <div id="hour11" class="row time-block ">
       <div class="col-md-2 hour">
         11:00am
       </div>
@@ -49,7 +49,7 @@
         <i class="icon fas fa-save"></i>
       </button>
     </div>
-    <div id="hour12" class="row time-block past">
+    <div id="hour12" class="row time-block ">
       <div class="col-md-2 hour">
         12:00pm
       </div>
@@ -58,7 +58,7 @@
         <i class="icon fas fa-save"></i>
       </button>
     </div>
-    <div id="hour13" class="row time-block past">
+    <div id="hour13" class="row time-block ">
       <div class="col-md-2 hour">
         1:00pm
       </div>
@@ -67,7 +67,7 @@
         <i class="icon fas fa-save"></i>
       </button>
     </div>
-    <div id="hour14" class="row time-block past">
+    <div id="hour14" class="row time-block ">
       <div class="col-md-2 hour">
         2:00pm
       </div>
@@ -76,7 +76,7 @@
         <i class="icon fas fa-save"></i>
       </button>
     </div>
-    <div id="hour15" class="row time-block past">
+    <div id="hour15" class="row time-block ">
       <div class="col-md-2 hour">
         3:00pm
       </div>
@@ -85,7 +85,7 @@
         <i class="icon fas fa-save"></i>
       </button>
     </div>
-    <div id="hour16" class="row time-block past">
+    <div id="hour16" class="row time-block ">
       <div class="col-md-2 hour">
         4:00pm
       </div>
@@ -94,7 +94,7 @@
         <i class="icon fas fa-save"></i>
       </button>
     </div>
-    <div id="hour17" class="row time-block past">
+    <div id="hour17" class="row time-block ">
       <div class="col-md-2 hour">
         5:00pm
       </div>
@@ -105,7 +105,9 @@
     </div>
 </div>
   <!-- Timeblocks go here -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="./Assets/script.js"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+ <script src="./Assets/script.js"></script>
 </body>
 </html>
