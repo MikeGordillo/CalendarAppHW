@@ -1,4 +1,4 @@
-//Time
+//Time Display*
 
 var currentDay = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 $("#currentDay").html(currentDay);
@@ -18,7 +18,7 @@ $(document).ready(function(){
  $("#hour16 .description").val(localStorage.getItem("hour16"));
  $("#hour17 .description").val(localStorage.getItem("hour17"));
 
- //Save Button onClick event
+ //Save Button onClick event*
 
     $(".saveBtn").on("click", function(){
         var input = $(this).siblings(".description").val();
@@ -26,7 +26,7 @@ $(document).ready(function(){
         localStorage.setItem(time, input);
     })
 
-    //Changing Color Depending on time: past/future/present
+    //Changing Color Depending on time: past/future/present*
 
     function addColor(){
         var now = moment().hour();
