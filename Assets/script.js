@@ -4,10 +4,10 @@ var currentDay = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 $("#currentDay").html(currentDay);
 
 //Document Ready Function
+//In the function taking the textarea input and saving it to local 
 
 $(document).ready(function(){
 
- $("#hour8 .description").val(localStorage.getItem("hour8"));
  $("#hour9 .description").val(localStorage.getItem("hour9"));
  $("#hour10 .description").val(localStorage.getItem("hour10"));
  $("#hour11 .description").val(localStorage.getItem("hour11"));
@@ -18,7 +18,7 @@ $(document).ready(function(){
  $("#hour16 .description").val(localStorage.getItem("hour16"));
  $("#hour17 .description").val(localStorage.getItem("hour17"));
 
- //Save Button onClick
+ //Save Button onClick event
 
     $(".saveBtn").on("click", function(){
         var input = $(this).siblings(".description").val();
@@ -26,7 +26,7 @@ $(document).ready(function(){
         localStorage.setItem(time, input);
     })
 
-    //Add Color Depending on time past/future/present
+    //Changing Color Depending on time: past/future/present
 
     function addColor(){
         var now = moment().hour();
